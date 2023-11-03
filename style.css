@@ -1,0 +1,95 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+header{    
+    background-color: white;
+    text-align: center;
+    font-size: 50px;
+    padding: 30px;
+    font-family: calc;
+}
+
+
+
+
+#section-one h2{
+    background-color: darkkhaki;
+    text-align: center; 
+    font-size: 20px;
+    color: black;
+    
+}
+
+#section-one li{
+    font-size: 20px;
+    margin: 20px;
+}
+
+#section-one ul{
+    font-size: 20px;
+    margin: 20px;
+}
+
+#section-one img {
+    width: 1680px;
+    height: 700px;
+    }
+
+#section-two h3{
+    background-color: darkkhaki;
+    text-align: center;
+}
+
+#section-two p{
+    font-size: 20px;
+}
+
+#section-two li{
+    font-size: 20px;
+}
+
+#section-two img{
+    width: 1690px;
+    height: 750px;   
+}
+
+#section-two p{
+    padding: 20px;
+}
+
+#section-two ul{
+    margin: 30px;
+    font-size: 24px;
+}
+
+#section-two h2{
+    margin: 20px;
+    font-size: 20px;
+}
+
+#section-three h1{
+    font-size: 30px;
+    text-align: center;
+    background-color: skyblue;
+}
+
+#section-three img{
+    width: 1700px;
+    height: 650px; 
+}
+
+#section-three p{
+   padding: 10px;
+    font-size: 30px;
+    text-align: center;
+
+}
+
+#section-three ul{
+    text-align: center;
+    padding: 20px;
+    font-size: 18px;
+    text-align: center;
+}
