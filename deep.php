@@ -235,10 +235,20 @@ foreach ($stmt as $row) {
     echo $row['name'] . "<br>";
 }
 
+// dataを取得する際にはSQLを実行して結果を配列に格納
+$stmt = $pdo->query("SELECT * FROM users");
+foreach ($stmt as $row) { 
+  echo $row['name'] . "<br>";
+}
 
+//プリペアドステートメントを使用して、SQLインジェクションを防止します。
+$stmt = $pdo->prepare("SELECT * FROM users WHERE id = :id");
+$stmt->bindParam(':id', $id, PDO::PARAM_INT);
+$stmt->execute();
 
-
-
+$stmt = $pdo->prepare("SELECT *FROM users WHERE id = :id");
+$stmt->bindParam(':id', $id, PDO::PARAM_INT);
+$stmt->excute();
 
 
 
