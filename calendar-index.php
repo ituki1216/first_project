@@ -14,29 +14,18 @@
       <?php echo $calendar; ?>
       <a href="?ym=<?php echo $next; ?>">&gt;</a> 
     </h2>
-    <table class="calendar-table">
-      <tr>
-        <?php 
-          foreach ($days as $day) {
-            echo "<th>$day</th>";
-          }
-        ?>
-      </tr>
-      <?php
-        for ($week = 0; $week < 5; $week++) {
-          echo "<tr>";
-          for ($day = 1; $day <= 7; $day++) {
-            $calendar = $week * 7 + $day;
-            if ($calendar <= 31) {
-              echo "<td>{$calendar}</td>";
-            } else {
-              echo "<td></td>";
-            }
-          }
-          echo "</tr>";
-        }
-      ?>
-    </table>
+
+    <?php
+      // カレンダー表示用のphpをインクルード
+      include 'app.php';
+      
+      // 現在の都市と月を取得
+      $month = date('n'); 
+      $year = date('y');
+
+      // カレンダー表示
+      render_calendar($month, $year);
+    ?>
   </div>
 </body>
 </html>
