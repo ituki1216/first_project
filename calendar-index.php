@@ -17,7 +17,6 @@
     <table class="calendar-table">
       <tr>
         <?php 
-          $days = ["日", "月", "火", "水", "木", "金", "土"];
           foreach ($days as $day) {
             echo "<th>$day</th>";
           }
